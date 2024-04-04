@@ -13,8 +13,8 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = .white
+        
         setLayout()
         bindData()
     }
@@ -29,6 +29,7 @@ final class WelcomeViewController: UIViewController {
     private let logoImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))
         imageView.image = UIImage(named: "logo2")
+        
         return imageView
     }()
     
@@ -37,6 +38,7 @@ final class WelcomeViewController: UIViewController {
         label.font = UIFont(name: "Pretendard-ExtraBold", size: 25)
         label.textAlignment = .center
         label.numberOfLines = 2
+        
         return label
     }()
     
@@ -46,6 +48,7 @@ final class WelcomeViewController: UIViewController {
         label.textAlignment = .center
         label.text = "hi"
         label.numberOfLines = 2
+        
         return label
     }()
     
@@ -57,6 +60,7 @@ final class WelcomeViewController: UIViewController {
         button.addTarget(self, action: #selector(backToLoginButtonDidTap), for: .touchUpInside)
         button.titleLabel?.font = UIFont(name: "Pretendard-Normal", size: 18)
         button.layer.cornerRadius = 6
+        
         return button
     }()
     
@@ -67,6 +71,7 @@ final class WelcomeViewController: UIViewController {
         button.setTitleColor(.gray500, for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Normal", size: 18)
         button.layer.cornerRadius = 6
+        
         return button
     }()
     

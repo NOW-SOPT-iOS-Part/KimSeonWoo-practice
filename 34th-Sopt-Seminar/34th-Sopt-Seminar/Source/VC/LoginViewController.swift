@@ -4,8 +4,6 @@
 //
 //  Created by Seonwoo Kim on 3/30/24.
 
-
-import Foundation
 import UIKit
 
 final class LoginViewController: UIViewController {
@@ -30,6 +28,7 @@ final class LoginViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 2
         label.font = UIFont(name: "Pretendard-Bold", size: 18)
+        
         return label
     }()
     
@@ -44,6 +43,7 @@ final class LoginViewController: UIViewController {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
          textField.leftView = paddingView
          textField.leftViewMode = .always
+        
         return textField
     }()
     
@@ -70,6 +70,7 @@ final class LoginViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 18)
         button.addTarget(self, action: #selector(loginButtonDidTap), for: .touchUpInside)
+        
         return button
     }()
     
@@ -90,10 +91,12 @@ final class LoginViewController: UIViewController {
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
         textField.inputView = datePicker
+        
         return textField
     }()
 
-    @objc private func datePickerValueChanged(sender: UIDatePicker) {
+    @objc 
+    private func datePickerValueChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM월 dd일 좋은 아침 입니다"
         datePickerTextField.text = dateFormatter.string(from: sender.date)
@@ -124,7 +127,6 @@ final class LoginViewController: UIViewController {
             showAlert(message: "비밀번호를 입력해주세요.")
             return
         }
-        
 //        presentToWelcomeVC()
         pushToWelcomeVC()
     }
