@@ -41,8 +41,8 @@ final class LoginViewController: UIViewController {
         textField.tintColor = .gray
         
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
-         textField.leftView = paddingView
-         textField.leftViewMode = .always
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
         
         return textField
     }()
@@ -56,8 +56,8 @@ final class LoginViewController: UIViewController {
         textField.backgroundColor = .gray200
         
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
-         textField.leftView = paddingView
-         textField.leftViewMode = .always
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
         
         return textField
     }()
@@ -81,10 +81,10 @@ final class LoginViewController: UIViewController {
         textField.backgroundColor = .gray200
         textField.layer.cornerRadius = 3
         textField.tintColor = .clear
-
+        
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
-         textField.leftView = paddingView
-         textField.leftViewMode = .always
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
         
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
@@ -94,8 +94,8 @@ final class LoginViewController: UIViewController {
         
         return textField
     }()
-
-    @objc 
+    
+    @objc
     private func datePickerValueChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM월 dd일 좋은 아침 입니다"
@@ -127,14 +127,13 @@ final class LoginViewController: UIViewController {
             showAlert(message: "비밀번호를 입력해주세요.")
             return
         }
-//        presentToWelcomeVC()
+        //        presentToWelcomeVC()
         pushToWelcomeVC()
     }
-
+    
     private func showAlert(message: String) {
         let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default))
         present(alert, animated: true)
     }
 }
-

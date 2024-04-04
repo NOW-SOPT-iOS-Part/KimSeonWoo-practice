@@ -21,7 +21,6 @@ final class WelcomeViewController: UIViewController {
     
     private func setLayout() {
         [logoImageView, welcomeLabel, goHomeButton, backToLoginButton, dateLabel].forEach {
-//            $0.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview($0)
         }
     }
@@ -64,7 +63,7 @@ final class WelcomeViewController: UIViewController {
         return button
     }()
     
-    private var backToLoginButton: UIButton = {
+    private lazy var backToLoginButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 498, width: 335, height: 58))
         button.backgroundColor = .gray200
         button.setTitle("로그인하기", for: .normal)
@@ -97,5 +96,4 @@ final class WelcomeViewController: UIViewController {
             print("Error: 날짜가 존재하지 않습니다.")
         }
     }
-
 }
