@@ -23,6 +23,10 @@
 		0BF56C792BBD5580003ECFB1 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF56C702BBD557F003ECFB1 /* Pretendard-ExtraLight.otf */; };
 		0BF56C7A2BBD5580003ECFB1 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF56C712BBD557F003ECFB1 /* Pretendard-Bold.otf */; };
 		0BF56C7B2BBD5580003ECFB1 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BF56C722BBD5580003ECFB1 /* Pretendard-Medium.otf */; };
+		0BF56C7D2BC11458003ECFB1 /* LoginViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF56C7C2BC11458003ECFB1 /* LoginViewController_DelegatePattern.swift */; };
+		0BF56C7F2BC1146B003ECFB1 /* WelcomeController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF56C7E2BC1146B003ECFB1 /* WelcomeController_DelegatePattern.swift */; };
+		0BF56C812BC11BA9003ECFB1 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF56C802BC11BA9003ECFB1 /* LoginViewController_Closure.swift */; };
+		0BF56C832BC11BB8003ECFB1 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF56C822BC11BB8003ECFB1 /* WelcomeViewController_Closure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		0BF56C702BBD557F003ECFB1 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		0BF56C712BBD557F003ECFB1 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		0BF56C722BBD5580003ECFB1 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		0BF56C7C2BC11458003ECFB1 /* LoginViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		0BF56C7E2BC1146B003ECFB1 /* WelcomeController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController_DelegatePattern.swift; sourceTree = "<group>"; };
+		0BF56C802BC11BA9003ECFB1 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
+		0BF56C822BC11BB8003ECFB1 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 				0B9226532BB7D7C0000F543B /* ViewController.swift */,
 				0BAAF3B92BB7E4A800BDD67C /* LoginViewController.swift */,
 				0BAAF3BB2BB7E8C400BDD67C /* WelcomeViewController.swift */,
+				0BF56C7C2BC11458003ECFB1 /* LoginViewController_DelegatePattern.swift */,
+				0BF56C7E2BC1146B003ECFB1 /* WelcomeController_DelegatePattern.swift */,
+				0BF56C802BC11BA9003ECFB1 /* LoginViewController_Closure.swift */,
+				0BF56C822BC11BB8003ECFB1 /* WelcomeViewController_Closure.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -216,10 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF56C812BC11BA9003ECFB1 /* LoginViewController_Closure.swift in Sources */,
+				0BF56C7F2BC1146B003ECFB1 /* WelcomeController_DelegatePattern.swift in Sources */,
 				0BAAF3BA2BB7E4A800BDD67C /* LoginViewController.swift in Sources */,
+				0BF56C7D2BC11458003ECFB1 /* LoginViewController_DelegatePattern.swift in Sources */,
 				0BAAF3BC2BB7E8C400BDD67C /* WelcomeViewController.swift in Sources */,
 				0B9226542BB7D7C0000F543B /* ViewController.swift in Sources */,
 				0B9226502BB7D7C0000F543B /* AppDelegate.swift in Sources */,
+				0BF56C832BC11BB8003ECFB1 /* WelcomeViewController_Closure.swift in Sources */,
 				0B9226522BB7D7C0000F543B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

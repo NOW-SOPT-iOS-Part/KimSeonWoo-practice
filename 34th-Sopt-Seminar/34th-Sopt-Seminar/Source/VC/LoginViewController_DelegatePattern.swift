@@ -1,12 +1,13 @@
-
-//  LoginViewController.swift
+//
+//  FirstViewController_DelegatePattern.swift
 //  34th-Sopt-Seminar
 //
-//  Created by Seonwoo Kim on 3/30/24.
+//  Created by Seonwoo Kim on 4/6/24.
+//
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class LoginViewController_DelegatePattern: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,9 +111,9 @@ final class LoginViewController: UIViewController {
     }
     
     private func pushToWelcomeVC() {
-        let welcomeViewController = WelcomeViewController()
-        welcomeViewController.id = idTextField.text
-        welcomeViewController.date = datePickerTextField.text
+        let welcomeViewController = WelcomeViewController_DelegatePattern()
+        welcomeViewController.delegate = self
+        welcomeViewController.welcomeLabel.text = idTextField.text
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
     }
     
@@ -138,3 +139,8 @@ final class LoginViewController: UIViewController {
     }
 }
 
+extension LoginViewController_DelegatePattern: DataBindProtocol {
+    func dataBind(id: String) {
+        idTextField.text = "\(id)에서 어떤걸로 할꺼얌?"
+    }
+}
