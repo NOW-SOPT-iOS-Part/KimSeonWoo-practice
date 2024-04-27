@@ -18,7 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // 2.
         self.window = UIWindow(windowScene: windowScene)
     // 3.
+<<<<<<< HEAD
+        let navigationController = UINavigationController(rootViewController: ChatViewController())
+=======
         let navigationController = UINavigationController(rootViewController: ScrollViewController())
+>>>>>>> origin/main
         self.window?.rootViewController = navigationController
     // 4.
         self.window?.makeKeyAndVisible()
