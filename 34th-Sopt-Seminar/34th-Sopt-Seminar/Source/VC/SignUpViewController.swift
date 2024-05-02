@@ -175,4 +175,3 @@ final class SignUpViewController: UIViewController {
         self.navigationController?.pushViewController(checkUserInfoVC, animated: true)
     }
 }
-
