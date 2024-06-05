@@ -12,15 +12,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-        // 1.
+
         guard let windowScene = (scene as? UIWindowScene) else { return }
-    // 2.
         self.window = UIWindow(windowScene: windowScene)
+<<<<<<< HEAD
+        let navigationController = UINavigationController(rootViewController: SignUpViewController())
+=======
     // 3.
         let navigationController = UINavigationController(rootViewController: ChatViewController())
+>>>>>>> origin/main
         self.window?.rootViewController = navigationController
-    // 4.
         self.window?.makeKeyAndVisible()
     }
 }
