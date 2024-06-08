@@ -41,6 +41,7 @@ final class LoginViewController: UIViewController {
         welcomeViewController.id = rootView.idTextField.text
         welcomeViewController.date = rootView.datePickerTextField.text
         self.navigationController?.pushViewController(welcomeViewController, animated: true)
+        //SRP위반? 함수가 너무 많은 일을 하고 있다.
     }
     
     @objc

@@ -11,6 +11,7 @@ import UIKit
 
 protocol ItemCollectoinViewCellDelegate: AnyObject {
     func heartButtonDidTapEvent(state: Bool, row: Int)
+    // DIP?
 }
 
 final class ItemCollectionViewCell: UICollectionViewCell {
